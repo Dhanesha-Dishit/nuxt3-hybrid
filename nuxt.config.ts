@@ -11,4 +11,11 @@ export default defineNuxtConfig({
 
     // Default is Universal Runs on Server side
   },
+  nitro: {
+    output: {
+      dir: "output",
+      serverDir: "output/server",
+      publicDir: "output/public",
+    },
+  },
 });
