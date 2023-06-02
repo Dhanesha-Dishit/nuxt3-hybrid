@@ -8,14 +8,8 @@ export default defineNuxtConfig({
     "/swr": { swr: true },
     "/blog": { ssr: false },
     "/blog/**": { isr: false },
+    "/gallery": { static: true },
 
     // Default is Universal Runs on Server side
-  },
-  nitro: {
-    output: {
-      dir: "output",
-      serverDir: "output/server",
-      publicDir: "output/public",
-    },
   },
 });
